@@ -2,37 +2,179 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="utf-8" />
+    <!-- 网页标题 -->
+    <title>AD`s Blog</title>
+
+    <!-- 设置编码格式 -->
+    <meta charset="utf-8"/>
+
     <meta name="viewport" content="width=device-width" />
-    <title>My test page</title>
+
+    <!--声明网页作者 -->
+    <meta name="author" content="AsleepDragon"/>
+
+    <!-- 网页描述 -->
+    <meta name="description" content="The website is a record of learning Web Devlopment"/>
+
+    <!-- 声明CSS -->
     <link href="styles/style.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" /> -->
+
+    <!-- 设置网页图标 -->
+    <link rel="icon" href="/AD-icon.ico"/>
 </head>
 
 <!---------------------------------------------------------->
 <body>
+    <h1>Welcome to my blog👋</h1>
+    <p>The blog is contain some notes that something I write down when I learn HTML.💻</p>
+    <p>Hope you could get some knowledge at my blog📖</p>
+    <p>If you have any questions,contact me anytime👉</p>
+    <br>
+    <hr>
 
-    <h1 id="my-id">The html is about my studying process</h1>
-    <p>This is a paragraph</p>
-    <p>At Mozilla, we're a global community of</p>
+    <strong><em>Important!!!</em></strong>
+    <p>在html中，中最重要的一定是<strong>语义</strong>，我们在html中设计文字的内容，不关心html是否能设计出炫酷的页面和交互程序，因为那都交给CSS和JavaScript来做，我们尽可能条理清晰地在html中处理文字或其他数据就OK了</p>
+    <p>Why需要条理清晰的处理？</p>
     <ul>
-        <li class="my-class">technologists</li>
-        <li class="my-class">thinkers</li>
-        <li class="my-class">builders</li>
+        <li>尽可能的提升网页的阅读性，让读者有良好的体验</li>
+        <li>其实更是为了Developer自己，条理清晰的代码结构能让CSS、JavaScript编写以及后期的调试更为方便</li>
     </ul>
-    <p>working together...</p>
     <br>
 
-    <a href="https://www.mozilla.org/zh-CN/about/manifesto/">Mozilla Manifesito</a>
+    <!-- 一些基础的文本样式 -->
+    <p>Hello👋,here is <em>AsleepDragon</em></p>
+    <p>Hello👋,here is <strong>AsleepDragon</strong></p>
+    <p>Hello👋,here is <mark>AsleepDragon</mark></p>
+    <p>Hello,here is <span>AsleepDragon</span></p>
+    <br>
+    <hr>
 
-
-
-    <img src="images/girl001.png" alt="a beautiful girl" width="600">
+    <!-- 无序列表 -->
+    <p>我早晨喜欢吃些什么</p>
+    <ul>
+        <li>豆浆</li>
+        <li>油条</li>
+        <li>牛奶</li>
+        <li>面包</li>
+    </ul>
     <br>
 
-    <button>Change user</button>
+    <!-- 有序列表 -->
+    <p>前端学习路线</p>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+    <br>
 
-<script src="scripts/main.js"></script>
+    <!--列表是可以嵌套的 -->
+    <p>全栈开发</p>
+    <ul>
+        <li>前端</li>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+        <li>后端</li>
+    </ul>
+    <br>
+
+    <!-- 描述列表 -->
+    <dl>
+        <dt>培根</dt>
+        <dd>整个世界的粘合剂</dd>
+
+        <dt>鸡蛋</dt>
+        <dd>蛋糕的粘合剂</dd>
+
+        <dt>咖啡</dt>
+        <dd>一种浅棕色的饮料</dd>
+        <dd>可以在清晨带来活力</dd>
+    </dl>
+    <br>
+    <hr>
+
+    <!-- 块引用 -->
+    <p><strong>HTML<code>&lt;blockquote&gt;</code>元素</strong></p>
+    <p>这是块引用：</p>
+    <blockquote>
+        <p>块引用会独占一块区域</p>
+    </blockquote>
+
+    <blockquote cite="https://asleepdragon.giuhub.io">
+        <p>块引用cite属性用URL来指向引用的资源</p>
+        <p>需要注意的是，这只是语义化标签，cite指向的链接并不会真正的跳转，所以还是那句话，html注重的是<strong>语义</strong></p>
+    </blockquote>
+
+    <!-- 行内引用 -->
+    <p>行内引用元素<code>&lt;q&gt;</code></p>
+    <p>例如字母<q>AD</q>是一个行内引用，同样可以为q标签附上cite元素</p>
+    <p>行内引用会自动为被引用元素添加双引号“”</p>
+
+    <p>块引用和行内引用无法在浏览器上真实的显示出来，所以尽可能地通过其他方式让其展现出链接</p>
+    <p>例如使用<code>&lt;a&gt</code>元素或者<code>JavaScript</code></p>
+    <p>example:AsleepDragon`s 
+        <q cite="https://asleepdragon.github.io">
+            <a href="https://asleepdragon.github.io" target="_blank">blog</a>
+        </q>
+    </p>
+    <br>
+    <p>单独的<code>&lt;cite&gt;</code>引用链接，使链接文本变为斜体，例如：</p>
+    <p>这是我的<a href="https://asleepdragon.github.io"><cite>博客</cite></a></p>
+
+    <hr>
+
+    <!-- 缩略语 -->
+    <p><abbr title="美国国家航空航天局">NASA</abbr>做了一些动人心弦的事情。</p>
+    <hr>
+
+    <!-- 标记联系方式 -->
+    <address>
+        <p>
+            Zhengzhou<br>
+            Henan<br>
+            CN
+        </p>
+        <ul>
+            <li>Tel:39001877</li>
+            <li>Email:3120015775@mail.com</li>
+        </ul>
+    </address>
+    <hr>
+
+    <!-- 上标与下标 -->
+    <p>上标&lt;sup&gt;，下标：&lt;sub&gt;</p>
+    <p>水的化学方程式：H<sub>2</sub>O</p>
+    <P>n的平方用数学表示为：n<sup>2</sup></P>
+    <hr>
+
+    <!-- 展示代码？ -->
+    <!-- <pre>
+    <code>
+        #include &lt;stdio.h&gt;
+        int main()
+        {
+            printf("Hello HTML");
+            return 0;
+        }
+    </code>
+    </pre> -->
+
+    <!-- 标记时间和日期？ -->
+    <time datetime="2026-4-7">7 April 2026</time>
+
+
+    <hr>
+
+    <img src="images/girl001.png" alt="a beautiful girl" width="300">
+    <br>
+
+
+<!-- <script src="scripts/main.js"></script> -->
 </body>
 
 </html>
