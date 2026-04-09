@@ -116,7 +116,7 @@
     <p>行内引用会自动为被引用元素添加双引号“”</p>
 
     <p>块引用和行内引用无法在浏览器上真实的显示出来，所以尽可能地通过其他方式让其展现出链接</p>
-    <p>例如使用<code>&lt;a&gt</code>元素或者<code>JavaScript</code></p>
+    <p>例如使用<code>&lt;a&gt;</code>元素或者<code>JavaScript</code></p>
     <p>example:AsleepDragon`s 
         <q cite="https://asleepdragon.github.io">
             <a href="https://asleepdragon.github.io" target="_blank">blog</a>
@@ -254,6 +254,85 @@
         </tfoot>
    
     </table>
+    <hr>
+
+    <!-- 表单控件放在<form>元素中 -->
+    <form>
+        <P>显式表单标签：通过&lt;lable&gt;的for属性与&lt;input&gt;的id属性建立联系</P>
+        <label for="name">姓名：</label>
+        <input type="text" name="name" id="name">
+
+        <p>隐式表单标签：将控件嵌套在&lt;label&gt;元素中</p>
+        <label>
+            email:
+            <input type="text" name="email">
+        </label>
+        <br>
+
+        <!-- button元素默认属性为submit-->
+        <button>点我提交</button>
+        <!-- <button type="submit">点我提交</button> -->
+
+        <button type="reset">点我重置</button>
+
+        <!--和<form>外的button元素一样，button属性什么也不做，但可以通过JavaScript为其添加功能-->
+        <button type="button">普通按钮</button>
+        <br>
+
+        <!-- <fieldset>元素将form表单中的控件分组 -->
+        <!-- 单选按钮 -->
+        <fieldset>
+            <!--<legend>元素为该表单组的标题 -->
+            <legend>性别</legend>
+            
+            <input type="radio" name="gender" value="male" id="male" checked>
+            <label for="male">男</label>
+
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female">女</label>
+        </fieldset>
+
+        <!-- 复选框 -->
+        <fieldset>
+            <form>
+                <legend>hobby</legend>
+            
+                <input type="checkbox" name="playgame" id="playgame">
+                <label for="playgame">playgame</label>
+            
+                <input type="checkbox" name="playball" id="playball">
+                <label for="playgame">playball</label>
+            
+                <input type="checkbox" name="music" id="music" checked>
+                <label for="playgame">music</label>
+
+            </form>
+        </fieldset>
+
+        <!-- 下拉菜单 -->
+        <label for="transport">出行方式：</label>
+        <select name="transport" id="transport">
+            <option value="">--请选择一项--</option>
+            <option value="plane">乘坐飞机</option>
+            <option value="bike">骑自行车</option>
+            <option value="walk">徒步</option>
+            <option value="bus">乘公交车</option>
+            <option value="train">搭乘火车</option>
+            <option value="jetPack" selected>使用喷气背包</option>
+        </select>
+        <br>
+
+        <!-- 多行文本输入框 -->
+        <label for="comment">备注:</label>
+        <textarea id="comment" name="comment" rows="5" cols="20">此处撰写备注</textarea>
+
+    </form>
+    <hr>
+
+    <iframe src="http://bilibili.com" width="1200" height="700">
+        <p>Bilibili</p>
+
+    </iframe>
 
 
     <figure>
